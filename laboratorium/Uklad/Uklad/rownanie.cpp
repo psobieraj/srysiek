@@ -7,7 +7,6 @@ using namespace std;
 
 float a, b, c, d, e, f, wx, wy, w, x, y;
 
-
 int main()
 {
 	
