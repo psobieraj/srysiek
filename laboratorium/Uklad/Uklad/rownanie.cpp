@@ -8,23 +8,24 @@ using namespace std;
 float a, b, c, d, e, f, wx, wy, w, x, y;
 
 
-
 int main()
 {
 	
 
-	cout << "Podaj a: \n ";
-	cin >> a;
-	cout << "Podaj b:  \n";
-	cin >> b;
-	cout << "Podaj c: \n ";
-	cin >> c;
-	cout << "Podaj d: \n";
-	cin >> d;
-	cout << "Podaj e: \n";
-	cin >> e;
-	cout << "Podaj f: \n";
-	cin >> f;
+	cout << " Podaj a :  \n";
+		cin >> a;
+	cout << " Podaj a :  \n";
+		cin >> b;
+	cout << " Podaj a :  \n";
+		cin >> c;
+	cout << " Podaj a :  \n";
+		cin >> d;
+	cout << " Podaj a :  \n";
+		cin >> e;
+	cout << " Podaj a :  \n";
+		cin >> f;
+
+	
 	// w = ae - db              wx = ce - fb            wy = af - dc
 
 	w = (a*e) - (b*d); 
