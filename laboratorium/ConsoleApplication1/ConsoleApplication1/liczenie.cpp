@@ -1,3 +1,4 @@
+// Patryk Sobieraj, Teleinformatyka, gr.1 sekcja 1
 #include <iostream>
 #include <cmath>
 #include <string>

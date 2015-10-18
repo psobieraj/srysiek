@@ -1,7 +1,11 @@
+// Patryk Sobieraj, Teleinformatyka, gr.1 sekcja 1
 #include <iostream>
+#include <ctime>
+#include <cstdlib>
+
+using namespace std;
 
 int main()
 {
-	std::cout << "abc";
-	return 0;
+	cout << "Hello ppk\n";
 }
