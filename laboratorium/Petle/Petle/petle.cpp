@@ -14,9 +14,9 @@ int main()
 {
 // Pierwsze zadanie (Wypisanie n liczb)
 
-	/* cout << "Podaj ile wynosi Twoje n \n";
+	/* cout << "Podaj ile wynosi Twoje n : " ;
 	cin >> n;
-	for (i = 0;i < n;i++)
+	for (i = 1 ;i <= n;i++)
 		cout << i << endl; */
 
 // Drugie zadanie ( wypisanie n liczb od konca )
@@ -40,7 +40,7 @@ int main()
 		{
 			if ((i % dzielnik) == 0)
 			{
-				cout << i << endl;
+				cout << " Liczba podzielne przez Twoj dzielnik to : " << i << endl;
 			}
 		} */
 
@@ -128,7 +128,7 @@ int main()
 
 // Osme zadanie ( losowanie za pomoca for)
 
- /*	cout << "Witaj, pomyslalem liczba z przedzialu 1-20 \n";
+ 	/* cout << "Witaj, pomyslalem liczba z przedzialu 1-20 \n";
 	srand(time(NULL));
 	int liczba = rand() % 20 + 1;
 	for (int i = 1; i++;)
@@ -143,19 +143,24 @@ int main()
 
 //Dziewiate zadanie ( losowanie z ograniczeniem do 5 prob )
 
-/* cout << "Witaj, pomyslalem liczba z przedzialu 1-20 \n";
+  cout << "Witaj, pomyslalem liczba z przedzialu 1-20 \n \n";
 		 srand(time(NULL));
 		 int liczba = rand() % 20 + 1;
-		 cout << " masz 5 prob " << endl;
-		 for (int i=0; i<5; i++)
+		 cout << "Na odgadniecie liczby masz 5 prob " << endl << endl; ;
+		 for (int i = 1; i <= 5; i++)
 		 {
-			 cout << " masz 5 prob " << endl;
-			 cin >> proba;
-			 if (proba < liczba) cout << "podaj wieksza liczbe \n";
-			 if (proba > liczba) cout << "podaj mniejsza liczbe \n";
-			 if (proba == liczba) cout << "gratulacje, zgadles \n";
-			 } */
 
+			 cin >> proba;
+			 if (proba < liczba) cout << "podaj wieksza liczbe, to jest Twoja " << i << " powtorka \n" << endl;
+			 if (proba > liczba) cout << "podaj mniejsza liczbe, to jest Twoja  " << i << " powtorka \n " << endl;
+			 if (proba == liczba) cout << "gratulacje, zgadles za  " << i << " razem \n \n" << endl;
+			 else if (i == 5) {
+				 cout << "Wykorzystales 5 szans,  nie udalo Ci sie odgadnac \n";
+				 //system("pause");
+				 break;
+				 
+			 }
+		 } 
 
 
 
