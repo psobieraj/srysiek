@@ -143,7 +143,7 @@ int main()
 
 //Dziewiate zadanie ( losowanie z ograniczeniem do 5 prob )
 
-  /*cout << "Witaj, pomyslalem liczba z przedzialu 1-20 \n \n";
+  /* cout << "Witaj, pomyslalem liczba z przedzialu 1-20 \n \n";
 		 srand(time(NULL));
 		 int liczba = rand() % 20 + 1;
 		 cout << "Na odgadniecie liczby masz 5 prob " << endl << endl; ;
