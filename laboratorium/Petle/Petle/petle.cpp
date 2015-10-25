@@ -202,6 +202,7 @@ if (wybor2 == 0)
 	cout << "Srednia wprowadzonych liczb - " << srednia << endl;
 	cout << "Najmniejsza z wprowadzonych liczb - " << najm << endl;
 	cout << "Najwieksza z wprowadzonych liczb- " << najw << endl;
+	// Brak odchylenia standardowego, wychodza bledne wyniki
 }
 else if (wybor2 == 1)
 {
@@ -213,10 +214,11 @@ else if (wybor2 == 1)
 	cout << "Ilosc wprowadzonych liczb - " << l << endl;
 	cout << "Srednia wprowadzonych liczb - " << srednia << endl;
 	cout << "Najmniejsza z wprowadzonych liczb - " << najm << endl;
-	cout << "Najwieksza z wprowadzonych liczb- " << najw << endl;
+	cout << "Najwieksza z wprowadzonych liczb- " << najw << endl; 
+	// Brak odchylenia standardowego, wychodza bledne wyniki
 } */
 
-			return 0;
+return 0;
 
 
 	}
