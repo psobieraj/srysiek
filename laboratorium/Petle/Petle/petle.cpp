@@ -3,8 +3,9 @@
 #include <ctime>
 #include <cmath>
 using namespace std;
-int n, i, licznik, proba;
-double z, podstawa;
+int n, i, wybor1, wybor2, licznik, proba;
+double srednia, najw, najm, s,z, podstawa, liczba;
+double l = 1;
 int k = 1;
 int wynik;
 int start, stop,wykladnik, dzielnik=0;
@@ -162,10 +163,58 @@ int main()
 			 }
 		 } */
 
+// Program dziesiaty ( Podanie ilosci wprowadzonych liczb, wykazanie liczby najmniejszej, najwiekszej oraz sredniej )
 
+/* cout << "Wprowadz liczbe :  ";
+cin >> liczba;
+s = liczba;
+najm = liczba;
+najw = liczba;
+cout << "Czy to byla ostatnia liczba ? (Tak - 1       Nie - 0 )   " ;
+cin >> wybor2;
+if (wybor2 == 0)
+{
+	do
+	{
+		cout << "Wprowadz liczbe : ";
+		cin >> z;
+		s = s + z;
+		l++;
+		srednia = s / l;
 
+		if (najm <= z) {}
 
+		else if (najw > z)
+		{najm = z;}
 
+		if (najw >= z) {}
+
+		else if (najw < z)
+		{najw = z;}
+
+		liczba = z;
+		cout << "Czy to byla ostatnia liczba ? (Tak - 1       Nie - 0 )   " ;
+		cin >> wybor1;
+	} while (wybor1 == 0);
+
+	cout << endl << endl << "                    PODSUMOWANIE           " << endl << endl;
+	cout << "Ilosc wprowadzonych liczb - " << l << endl;
+	cout << "Srednia wprowadzonych liczb - " << srednia << endl;
+	cout << "Najmniejsza z wprowadzonych liczb - " << najm << endl;
+	cout << "Najwieksza z wprowadzonych liczb- " << najw << endl;
+}
+else if (wybor2 == 1)
+{
+	srednia = liczba;
+	najm = liczba;
+	najw = liczba;
+
+	cout << endl << endl << "                   PODSUMOWANIE           " << endl << endl;
+	cout << "Ilosc wprowadzonych liczb - " << l << endl;
+	cout << "Srednia wprowadzonych liczb - " << srednia << endl;
+	cout << "Najmniejsza z wprowadzonych liczb - " << najm << endl;
+	cout << "Najwieksza z wprowadzonych liczb- " << najw << endl;
+} */
 
 			return 0;
 
