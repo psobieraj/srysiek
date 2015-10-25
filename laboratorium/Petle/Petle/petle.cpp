@@ -4,7 +4,7 @@
 #include <cmath>
 using namespace std;
 int n, i, wybor1, wybor2, licznik, proba;
-double srednia, najw, najm, s,z, podstawa, liczba;
+double srednia, najw, najm, s,z, podstawa, liczba, odchylenie, sumator;
 double l = 1;
 int k = 1;
 int wynik;
@@ -165,7 +165,7 @@ int main()
 
 // Program dziesiaty ( Podanie ilosci wprowadzonych liczb, wykazanie liczby najmniejszej, najwiekszej oraz sredniej )
 
-/* cout << "Wprowadz liczbe :  ";
+/* cout  << "Wprowadz liczbe :  ";
 cin >> liczba;
 s = liczba;
 najm = liczba;
@@ -181,6 +181,7 @@ if (wybor2 == 0)
 		s = s + z;
 		l++;
 		srednia = s / l;
+		
 
 		if (najm <= z) {}
 
@@ -193,29 +194,33 @@ if (wybor2 == 0)
 		{najw = z;}
 
 		liczba = z;
+		sumator = sumator + pow(liczba, 2);
 		cout << "Czy to byla ostatnia liczba ? (Tak - 1       Nie - 0 )   " ;
 		cin >> wybor1;
 	} while (wybor1 == 0);
+	odchylenie = sqrt(sumator / l - pow(srednia, 2));
 
 	cout << endl << endl << "                    PODSUMOWANIE           " << endl << endl;
 	cout << "Ilosc wprowadzonych liczb - " << l << endl;
 	cout << "Srednia wprowadzonych liczb - " << srednia << endl;
 	cout << "Najmniejsza z wprowadzonych liczb - " << najm << endl;
 	cout << "Najwieksza z wprowadzonych liczb- " << najw << endl;
-	// Brak odchylenia standardowego, wychodza bledne wyniki
+	cout << "Odchylenie standardowe wprowadzonych liczb wynosi " << odchylenie << endl;
+	
 }
 else if (wybor2 == 1)
 {
 	srednia = liczba;
 	najm = liczba;
 	najw = liczba;
-
+	odchylenie = sqrt(sumator / l - pow(srednia, 2));
 	cout << endl << endl << "                   PODSUMOWANIE           " << endl << endl;
 	cout << "Ilosc wprowadzonych liczb - " << l << endl;
 	cout << "Srednia wprowadzonych liczb - " << srednia << endl;
 	cout << "Najmniejsza z wprowadzonych liczb - " << najm << endl;
 	cout << "Najwieksza z wprowadzonych liczb- " << najw << endl; 
-	// Brak odchylenia standardowego, wychodza bledne wyniki
+	cout << "Odchylenie standardowe wprowadzonych liczb wynosi " << odchylenie << endl;
+	
 } */
 
 return 0;
