@@ -5,7 +5,6 @@
 #include <ctime>
 #include <cmath>
 #include <conio.h>
-
 using namespace std;
 const int N = 20;
 int tab[20][20];
@@ -18,11 +17,13 @@ int main()
 			tab[i][j] = i*j;
 		}
 cout << "|";
-	for (i = 0; i < 80; i++)
-		cout << "-";
+
+	
 	for (i = 1; i < 17; i++)
 		cout << setw(4) << hex << i;
 		cout << " \n";
+	for (i = 0; i < 80; i++)
+			cout << "-";
 	for (i = 1; i < 17; i++)
 	for (j = 1; j < 17; j++)
 		{
