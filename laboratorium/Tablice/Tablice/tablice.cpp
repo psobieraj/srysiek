@@ -38,17 +38,12 @@ int main ()
 		if (tab[0] != min)
 			{
 				 tmp = tab[pozycja];
-				tab[pozycja] = tab[0];
-				tab[0] = tmp;
-
-				
-				
-				
-		};
+				 tab[pozycja] = tab[0];
+				 tab[0] = tmp;
+			};
 
 		for (i = 0; i < 10; i++)
-			cout  <<  tab[i] << endl;
-			
+		cout  <<  tab[i] << endl;
 
 		cout << "min: " << min << endl;
 		cout << "max: " << max << endl; 
