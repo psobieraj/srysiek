@@ -2,14 +2,15 @@
 #include <iostream>
 #include <ctime>
 #include <cmath>
+#include <conio.h>
 using namespace std;
 const int N = 20;
 int tab[10];
 int i, min, ind, max, tmp, wynik;
 
 int main ()
-
-{		srand(time(NULL));
+{
+		 srand(time(NULL));
 		for (int i = 0; i < 10; ++i)
 		{
 				tab[i] = rand() % 20;
@@ -46,16 +47,16 @@ int main ()
 		};
 
 		for (i = 0; i < 10; i++)
-			cout << tab[i] << endl;
+			cout  <<  tab[i] << endl;
 			
 
 		cout << "min: " << min << endl;
-		cout << "max: " << max << endl;
-		
-		
+		cout << "max: " << max << endl; 
+	
 		return 0;
-	} 
-
+	}
+		
+	
 
 
 
