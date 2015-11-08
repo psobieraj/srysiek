@@ -22,7 +22,7 @@ int main(int argc, char**argv)
 
 // ZADANIE 1	
 
-	/* string nazwa("abc");
+	/*string nazwa("abc");
 	char n[] = "aba"; // 4 znaki, bo jeszcze znak konca
 	//cin >> nazwa; // nazwa tylko do spacji
 	getline(cin, nazwa); // wyswietla nie tylko do bialego znaku
@@ -39,7 +39,7 @@ int main(int argc, char**argv)
 // ---------------------------------------------------------------------------------------------------------------
 
 // ZADANIE 3
-	/* string pierwszy, drugi;
+/*	string pierwszy, drugi;
 	int p1, p2 = 0;
 	cout << " podaj pierwszy " << endl;
 	cin >> pierwszy;
