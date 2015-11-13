@@ -162,8 +162,10 @@ int main(){
 
 /*	wypelnianie(tablica);  */
 	
+// ------------------------------ U K L A D   R O W N A N ------------------------------
 
-	cout << " Podaj a :  \n";
+
+/*	cout << " Podaj a :  \n";
 	cin >> a;
 	cout << " Podaj b :  \n";
 	cin >> b;
@@ -176,7 +178,7 @@ int main(){
 	cout << " Podaj f :  \n";
 	cin >> f;
 
-	uklad(a, b, c, d, e, f);
+	uklad(a, b, c, d, e, f);  */
 
 	
 	
