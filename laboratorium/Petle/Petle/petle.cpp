@@ -219,9 +219,9 @@ else if (wybor2 == 1)
 	cout << "Srednia wprowadzonych liczb - " << srednia << endl;
 	cout << "Najmniejsza z wprowadzonych liczb - " << najm << endl;
 	cout << "Najwieksza z wprowadzonych liczb- " << najw << endl; 
-	cout << "Odchylenie standardowe wprowadzonych liczb wynosi " << odchylenie << endl;
+	cout << "Odchylenie standardowe wprowadzonych liczb wynosi " << odchylenie << endl; */
 	
-} */
+} 
 
 return 0;
 

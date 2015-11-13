@@ -7,5 +7,18 @@ using namespace std;
 
 int main()
 {
-	cout << "Hello ppk\n";
-}
+
+
+
+	
+		cout << "     Hello ppk " << endl;
+
+	}
+
+
+
+
+
+
+
+

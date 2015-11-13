@@ -59,7 +59,7 @@ float potega(float liczba, int wykladnik)
 	return wynik;
 }
 
-void odleglosc(int x1, int x2, int y1, int y2) {
+void odleglosc(float x1, float x2, float y1, float y2) {
 
 
 	cout << "Odleglosc miedzy punktami A i B wynosi : " << sqrt(pow((x2 - x1),2) + pow((y2 - y1),2))<<endl;
@@ -121,8 +121,8 @@ void uklad(float a, float b, float c, float d, float e, float f) {
 
 int main(){
 	//double a, b;
-	float liczba, a, b, c, d, e, f, wx, wy, w, x, y;
-	int pierwsza, druga, n, wykladnik,x1,x2,y1,y2,i, tablica[10];;
+	float liczba, a, b, c, d, e, f, wx, wy, w, x, y, x1, x2, y1, y2;
+	int pierwsza, druga, n, wykladnik,i, tablica[10];;
 	const int N = 10;
 
 
@@ -135,7 +135,7 @@ int main(){
 
 	// -------- Z A M I A N A    Z M I E N N Y C H -------------
 
-	/* cout << "Podaj pierwsza i druga liczbe " << endl;
+/*	 cout << "Podaj pierwsza i druga liczbe " << endl;
 	cin >> pierwsza;
 	cin >> druga;
 	cout << "Przed zamiana L1 = " << pierwsza << " L2 = " << druga << endl;
@@ -154,11 +154,11 @@ int main(){
 	fibiter(n); */
 	
 	// ----------------------------- P O T E G O W A N I E -------------------------
-/*  cout << "Podaj liczbe ktora chcesz podniesc do potegi " << endl;
+/*	cout << "Podaj liczbe ktora chcesz podniesc do potegi " << endl;
 	cin >> liczba;
 	cout << "Podaj wykladnik" << endl;
 	cin >> wykladnik;
-	cout << "Twoja liczba podniesiona do danej potegi wynosi : " << potega(liczba, wykladnik)<< endl; */
+	cout << "Twoja liczba podniesiona do danej potegi wynosi : " << potega(liczba, wykladnik)<< endl; */ 
 
 
 	//------------------------------ O D L E G L O S C   D W O C H   P U N K T O W ------------------------------
@@ -171,7 +171,7 @@ int main(){
 	cin >> x2;
 	cout << "Podaj y2 dla punktu B :" << " ";
 	cin >> y2;
-	odleglosc(x1, y1, x2, y2); */
+	odleglosc(x1, y1, x2, y2);   */
 	
 // ------------- W Y P E L N I A N I E      T A B L I C Y -----------------------------
 
@@ -194,7 +194,7 @@ int main(){
 	cout << " Podaj f :  \n";
 	cin >> f;
 
-	uklad(a, b, c, d, e, f);  */
+	uklad(a, b, c, d, e, f);   */
 	// ------------------- W Y P I S Y W A N I E    O D   K O N C A     T A B L I C Y --------------------
 /*	int tab[N];
 	srand(time(NULL));

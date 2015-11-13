@@ -79,7 +79,7 @@ int main(int argc, char**argv)
 
 // ZADANIE 5
 
-	/* cout << "Podaj wyraz gdzie litery A zostana zamienione na Z" << endl;
+/*	 cout << "Podaj wyraz gdzie litery A zostana zamienione na Z" << endl;
 	string pierwszy;
 	cin >> pierwszy;
 	int n = pierwszy.length();
@@ -258,7 +258,7 @@ while(liczba>0)
 // ---------------------------------------------------------------------------------------------------------------
 
 // ZAD 9 KALKULATOR
-/* cout << "Podaj pierwsza liczbe" << endl;
+ /*cout << "Podaj pierwsza liczbe" << endl;
 int liczba1, liczba2=0;
 double wynik = 0;
 char dzialanie;

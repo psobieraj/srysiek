@@ -14,7 +14,7 @@ int main()
 	cout << "Witaj, pomyslalem liczba z przedzialu 1-20 \n";
 	srand(time(NULL));
 	int liczba = rand() % 20 + 1;
-	cout << liczba << endl;
+	// cout << liczba << endl;
 
 	cout << "Sprobuj odgadnac jaka to liczba, masz 4 proby  " << endl;
 	cin >> proba;
