@@ -65,6 +65,20 @@ void odleglosc(int x1, int x2, int y1, int y2) {
 
 }
 
+void wypelnianie(int tab[]) {
+
+	srand(time(NULL));
+	for (int i = 0; i < 10; ++i)
+	{
+		tab[i] = rand() % 20;
+		cout  <<  tab[i] << " " ;
+
+	}
+	cout << endl;
+
+}
+
+
 
 
 
@@ -74,7 +88,8 @@ void odleglosc(int x1, int x2, int y1, int y2) {
 int main(){
 	double a, b;
 	float liczba;
-	int pierwsza, druga, n, wykladnik,x1,x2,y1,y2;
+	int pierwsza, druga, n, wykladnik,x1,x2,y1,y2,i, tablica[10];;
+	const int N = 10;
 
 
 	// -------D O D A W A N I E ---------
@@ -123,6 +138,11 @@ int main(){
 	cout << "Podaj y2 dla punktu B :" << " ";
 	cin >> y2;
 	odleglosc(x1, y1, x2, y2); */
+	
+// ------------- W Y P E L N I A N I E      T A B L I C Y -----------------------------
+
+/*	wypelnianie(tablica);  */
+	
 
 
 
