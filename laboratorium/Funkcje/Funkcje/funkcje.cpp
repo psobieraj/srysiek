@@ -57,7 +57,13 @@ float potega(float liczba, int wykladnik)
 	return wynik;
 }
 
+void odleglosc(int x1, int x2, int y1, int y2) {
 
+
+	cout << "Odleglosc miedzy punktami A i B wynosi : " << sqrt(pow((x2 - x1),2) + pow((y2 - y1),2))<<endl;
+
+
+}
 
 
 
@@ -68,7 +74,7 @@ float potega(float liczba, int wykladnik)
 int main(){
 	double a, b;
 	float liczba;
-	int pierwsza, druga, n, wykladnik;
+	int pierwsza, druga, n, wykladnik,x1,x2,y1,y2;
 
 
 	// -------D O D A W A N I E ---------
@@ -99,12 +105,26 @@ int main(){
 	fibiter(n); */
 	
 	// ----------------------------- P O T E G O W A N I E -------------------------
-	cout << "Podaj liczbe ktora chcesz podniesc do potegi " << endl;
+/*  cout << "Podaj liczbe ktora chcesz podniesc do potegi " << endl;
 	cin >> liczba;
 	cout << "Podaj wykladnik" << endl;
 	cin >> wykladnik;
+	cout << "Twoja liczba podniesiona do danej potegi wynosi : " << potega(liczba, wykladnik)<< endl; */
 
-	cout << "Twoja liczba podniesiona do danej potegi wynosi : " << potega(liczba, wykladnik)<< endl;
+
+	//------------------------------ O D L E G L O S C   D W O C H   P U N K T O W ------------------------------
+
+/*	cout << "Podaj x1 dla punktu A :" << " ";
+	cin >> x1;
+	cout << "Podaj y1 dla punktu A :" << " ";
+	cin >> y1;
+	cout << "Podaj x2 dla punktu B :" << " ";
+	cin >> x2;
+	cout << "Podaj y2 dla punktu B :" << " ";
+	cin >> y2;
+	odleglosc(x1, y1, x2, y2); */
+
+
 
 
 	
