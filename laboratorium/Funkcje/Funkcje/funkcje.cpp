@@ -31,6 +31,8 @@ int fibrek(int n)
 	return fibrek(n - 2) + fibrek(n - 1);
 }
 
+
+
 void fibiter(int n)
 {
 	long long a = 0, b = 1;
@@ -64,6 +66,19 @@ void odleglosc(int x1, int x2, int y1, int y2) {
 
 
 }
+
+void ust( int* tab, int N) {
+
+	cout << tab[N - 1] << " ";
+	if (N > 1) {
+		ust(tab, N - 1);
+	}
+
+	
+}
+
+
+
 
 void wypelnianie(int tab[]) {
 
@@ -162,6 +177,7 @@ int main(){
 
 /*	wypelnianie(tablica);  */
 	
+	
 // ------------------------------ U K L A D   R O W N A N ------------------------------
 
 
@@ -179,10 +195,19 @@ int main(){
 	cin >> f;
 
 	uklad(a, b, c, d, e, f);  */
+	// ------------------- W Y P I S Y W A N I E    O D   K O N C A     T A B L I C Y --------------------
+/*	int tab[N];
+	srand(time(NULL));
+	for (int i = 0; i < N; ++i)
+	{
+		tab[i] = rand() % 20;
+		cout << tab[i] << " ";
 
+	}
+	cout << endl;
+	ust(tab, N);  */
 	
 	
-
 	
 
 	return 0;
