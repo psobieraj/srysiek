@@ -78,6 +78,25 @@ void wypelnianie(int tab[]) {
 
 }
 
+void uklad(float a, float b, float c, float d, float e, float f) {
+		// w = ae - db              wx = ce - fb            wy = af - dc
+	float w,x,y,wx, wy;
+		w = (a*e) - (b*d);
+		wx = (c*e) - (b*f);
+		wy = (a*f) - (c*d);
+
+		if (w != 0)
+		{
+			cout << "Wspolczynnik x  = " << " ( " << c << " * " << e << " ) " << " - " << " ( " << b << " * " << f << " ) " << " / " << " ( " << a << " * " << e << " ) " << " - " << " ( " << b << " * " << d << " ) " << " = " << wx / w << "\n";
+			cout << "Wspolczynnik y  =  " << " ( " << a << " * " << f << " ) " << " - " << " ( " << c << " * " << d << " ) " << " / " << " ( " << a << " * " << e << " ) " << " - " << " ( " << b << " * " << d << " ) " << " = " << wy / w << "\n";
+		}
+		else
+			if (wx == 0 && wy == 0)
+				cout << "Ten uklad ma nieskonczenie wiele rozwiazan";
+			else
+				cout << "Jest to uklad sprzeczny \n";
+}
+
 
 
 
@@ -86,8 +105,8 @@ void wypelnianie(int tab[]) {
 
 
 int main(){
-	double a, b;
-	float liczba;
+	//double a, b;
+	float liczba, a, b, c, d, e, f, wx, wy, w, x, y;
 	int pierwsza, druga, n, wykladnik,x1,x2,y1,y2,i, tablica[10];;
 	const int N = 10;
 
@@ -144,8 +163,20 @@ int main(){
 /*	wypelnianie(tablica);  */
 	
 
+	cout << " Podaj a :  \n";
+	cin >> a;
+	cout << " Podaj b :  \n";
+	cin >> b;
+	cout << " Podaj c :  \n";
+	cin >> c;
+	cout << " Podaj d :  \n";
+	cin >> d;
+	cout << " Podaj e :  \n";
+	cin >> e;
+	cout << " Podaj f :  \n";
+	cin >> f;
 
-
+	uklad(a, b, c, d, e, f);
 
 	
 	

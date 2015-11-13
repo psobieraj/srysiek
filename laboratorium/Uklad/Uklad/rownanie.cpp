@@ -13,15 +13,15 @@ int main()
 
 	cout << " Podaj a :  \n";
 		cin >> a;
-	cout << " Podaj a :  \n";
+	cout << " Podaj b :  \n";
 		cin >> b;
-	cout << " Podaj a :  \n";
+	cout << " Podaj c :  \n";
 		cin >> c;
-	cout << " Podaj a :  \n";
+	cout << " Podaj d :  \n";
 		cin >> d;
-	cout << " Podaj a :  \n";
+	cout << " Podaj e :  \n";
 		cin >> e;
-	cout << " Podaj a :  \n";
+	cout << " Podaj f :  \n";
 		cin >> f;
 
 	
