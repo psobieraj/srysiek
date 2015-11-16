@@ -23,7 +23,7 @@ unsigned long long GetFileSize(const string& file_name) {
 
 void calculate_statistics(const string& intput_file_name, const string& output_file_name) {
 
-	int licznik,l  = 0;
+	int i, licznik,l  = 0;
 	double suma = 0;
 	string napis;
 
@@ -37,7 +37,13 @@ void calculate_statistics(const string& intput_file_name, const string& output_f
 		exit(1);
 	}
 
+	while (i << napis) {
+		l = stoi(napis, nullptr, 10)
+			licznik++;
+		suma += l;
+	}
 
+	o << suma;
 }
 
 int main(int argc, char ** argv) {
