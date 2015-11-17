@@ -1,3 +1,4 @@
+// Patryk Sobieraj Teleinformatyka gr1 sekcja 1
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -21,35 +22,51 @@ unsigned long long GetFileSize(const string& file_name) {
 }
 
 
-void calculate_statistics(const string& intput_file_name, const string& output_file_name) {
-
-	int i, licznik,l  = 0;
+void calculate_statistics(const string& input_file_name, const string& output_file_name) {
+	double licznik = 0;
 	double suma = 0;
-	string napis;
+	double srednia = 0;
+	double liczba;
 
-	ofstream k(intput_file_name, ios:: app);
-	ofstream i(output_file_name, ios::app);
+	ifstream odczytywanie(input_file_name);
 
-	if ((!k) || (!i))
-
+	if (!odczytywanie)
 	{
-		cout << "Nie mozna odpalic pliku \n";
+
+		cout << "Nie mozna otworzyc" << endl << input_file_name;
 		exit(1);
 	}
 
-	while (i << napis) {
-		l = stoi(napis, nullptr, 10)
-			licznik++;
-		suma += l;
-	}
+	while (odczytywanie >> liczba)
 
-	o << suma;
+	{
+		cout << liczba << " ";
+		licznik += 1;
+		suma += liczba;
+		srednia = suma / licznik;
+	}
+	
+	odczytywanie.close();
+
+	ofstream zapisywanie(output_file_name, ios::app);
+
+	if (!zapisywanie)
+	{
+
+		cout << "Nie mozna otworzyc" << output_file_name;
+		exit(1);
+	}
+	
+	zapisywanie << srednia;
+	zapisywanie.close();
+
+	return;
+
+
+	
 }
 
 int main(int argc, char ** argv) {
-
-	string nazwa;
-
 
 	/*	ofstream a("test.txt", ios::app);   // ios powoduje ze dodaja sie napisy,
 	//	ofstream a("d:\\test.txt", ios::app);  d:\\ powoduje zapis pliku na dysku D, musza byc 2 \
@@ -69,8 +86,6 @@ int main(int argc, char ** argv) {
 			int tab[] = { 1,2,3,4,5 };
 			for (auto e : tab)
 			{
-
-
 				a << e;
 			}
 
@@ -114,21 +129,16 @@ int main(int argc, char ** argv) {
 // ZADANIE 1
 
 
-
-/*	cout << "Podaj nazwe pliku \n";
-	cin >> nazwa;
-	cout << "Wielkosc pliku wynosi  " << " "  << GetFileSize(nazwa) << endl;       */
+/*    const string file_name = "D:\\rozmiar.txt";
+    cout << "Wielkosc pliku wynosi  " << " " << GetFileSize(file_name) << endl;   */
 
 
 
 // ZADANIE 2
 
-
-	string srednia;
-	cout << "Podaj nazwe pliku \n";
-	cin >> nazwa;
-	cout << "Podaj nazwe do zapisu sredniej \n";
-	cin >> srednia;
+	const string input_file_name = "D:\\liczbyrzeczywiste.txt" ;
+	const string output_file_name = "D:\\srednia.txt";
+	calculate_statistics(input_file_name, output_file_name);   
 
 
 
