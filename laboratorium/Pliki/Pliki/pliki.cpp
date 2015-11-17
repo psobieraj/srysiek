@@ -8,6 +8,7 @@ using namespace std;
 unsigned long long GetFileSize(const string& file_name) {
 
 	ofstream f(file_name, ios::app | ios:: binary);
+
 	if (!f)
 
 	{
@@ -23,6 +24,7 @@ unsigned long long GetFileSize(const string& file_name) {
 
 
 void calculate_statistics(const string& input_file_name, const string& output_file_name) {
+
 	double licznik = 0;
 	double suma = 0;
 	double srednia = 0;
@@ -129,16 +131,16 @@ int main(int argc, char ** argv) {
 // ZADANIE 1
 
 
-/*    const string file_name = "D:\\rozmiar.txt";
-    cout << "Wielkosc pliku wynosi  " << " " << GetFileSize(file_name) << endl;   */
+/*     const string file_name = "D:\\rozmiar.txt";
+     cout << "Wielkosc pliku wynosi  " << " " << GetFileSize(file_name) << endl;   */
 
 
 
 // ZADANIE 2
 
-	const string input_file_name = "D:\\liczbyrzeczywiste.txt" ;
+/*	const string input_file_name = "D:\\liczbyrzeczywiste.txt" ;
 	const string output_file_name = "D:\\srednia.txt";
-	calculate_statistics(input_file_name, output_file_name);   
+	calculate_statistics(input_file_name, output_file_name);   */
 
 
 
