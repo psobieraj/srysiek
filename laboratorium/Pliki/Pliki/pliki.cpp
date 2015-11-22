@@ -68,6 +68,43 @@ void calculate_statistics(const string& input_file_name, const string& output_fi
 	
 }
 
+
+void copy_text(const string& input_file_name, const string& output_file_name) {
+	ifstream pierwszy;
+	pierwszy.open(input_file_name);
+	ofstream drugi;
+	drugi.open(output_file_name, ios::app);
+	string tempstring;
+	while (getline(pierwszy, tempstring)) {
+
+		drugi << tempstring << endl;
+
+	}
+
+	pierwszy.close();
+	drugi.close();
+
+}
+
+void copy_binary(const string& input_file_name, const string& output_file_name) {
+
+	ifstream pierwszy;
+	pierwszy.open(input_file_name);
+	ofstream drugi;
+	drugi.open(output_file_name, ios::app | ios::binary);
+
+	pierwszy.seekg(0, ios::end);
+	unsigned long long filesize = pierwszy.tellg();
+	pierwszy.seekg(0);
+
+	char* temp = new char[filesize];
+	pierwszy.read(temp, filesize);
+	drugi.write(&temp[0], filesize);
+}
+
+
+
+
 int main(int argc, char ** argv) {
 
 	/*	ofstream a("test.txt", ios::app);   // ios powoduje ze dodaja sie napisy,
@@ -141,6 +178,14 @@ int main(int argc, char ** argv) {
 /*	const string input_file_name = "D:\\liczbyrzeczywiste.txt" ;
 	const string output_file_name = "D:\\srednia.txt";
 	calculate_statistics(input_file_name, output_file_name);   */
+
+
+// ZADANIE 3
+
+/*	const string input_file_name = "D:\\org.txt";
+	const string output_file_name = "D:\\kop.txt";
+	copy_text( input_file_name, output_file_name);
+	copy_binary(input_file_name,output_file_name); */
 
 
 
