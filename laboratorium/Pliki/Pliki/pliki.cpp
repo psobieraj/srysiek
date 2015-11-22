@@ -63,13 +63,11 @@ void calculate_statistics(const string& input_file_name, const string& output_fi
 	zapisywanie.close();
 
 	return;
-
-
-	
 }
 
 
 void copy_text(const string& input_file_name, const string& output_file_name) {
+
 	ifstream pierwszy;
 	pierwszy.open(input_file_name);
 	ofstream drugi;
@@ -167,8 +165,7 @@ int main(int argc, char ** argv) {
 
 // ZADANIE 1
 
-
-/*     const string file_name = "D:\\rozmiar.txt";
+/*	 const string file_name = "D:\\rozmiar.txt";
      cout << "Wielkosc pliku wynosi  " << " " << GetFileSize(file_name) << endl;   */
 
 
