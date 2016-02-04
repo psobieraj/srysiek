@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{D2A3D12B-ABA1-425B-B09F-21A6171D5D90}</ProjectGuid>
+    <ProjectGuid>{2C15E9C2-80D0-45F1-87FA-96044C85A9AE}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>projekt2</RootNamespace>
+    <RootNamespace>nauka</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -146,35 +146,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Dijkstra.h" />
-    <ClInclude Include="DodajDroge.h" />
-    <ClInclude Include="DodajMiasto.h" />
-    <ClInclude Include="DodajSasiada.h" />
-    <ClInclude Include="InicjujTablice.h" />
-    <ClInclude Include="PoliczOdleglosci.h" />
-    <ClInclude Include="SortujKolejke.h" />
-    <ClInclude Include="Struktury.h" />
-    <ClInclude Include="UtworzKolejke.h" />
-    <ClInclude Include="WczytajDane.h" />
-    <ClInclude Include="WczytajPrzelaczniki.h" />
-    <ClInclude Include="WyswietlPomoc.h" />
-    <ClInclude Include="ZnajdzMiasto.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Dijkstra.cpp" />
-    <ClCompile Include="DodajDroge.cpp" />
-    <ClCompile Include="DodajMiasto.cpp" />
-    <ClCompile Include="DodajSasiada.cpp" />
-    <ClCompile Include="InicjujTablice.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="PoliczOdleglosci.cpp" />
-    <ClCompile Include="SortujKolejke.cpp" />
-    <ClCompile Include="Struktury.cpp" />
-    <ClCompile Include="UtworzKolejke.cpp" />
-    <ClCompile Include="WczytajDane.cpp" />
-    <ClCompile Include="WczytajPrzelaczniki.cpp" />
-    <ClCompile Include="WyswietlPomoc.cpp" />
-    <ClCompile Include="ZnajdzMiasto.cpp" />
+    <ClCompile Include="nauka.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
