@@ -14,4 +14,5 @@ void DodajDroge(string &sMiastoPocz, string &sMiastoKonc, int &Koszt, Wezel* &Dr
 	if (!wMiastoKonc) wMiastoKonc = DodajMiasto(sMiastoKonc, Drzewo, Lista, LiczbaMiast);
 
 	DodajSasiada(wMiastoPocz, wMiastoKonc, Koszt, Lista);
+	DodajSasiada(wMiastoKonc, wMiastoPocz, Koszt, Lista);
 }

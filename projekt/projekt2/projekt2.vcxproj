@@ -158,6 +158,8 @@
     <ClInclude Include="WczytajDane.h" />
     <ClInclude Include="WczytajPrzelaczniki.h" />
     <ClInclude Include="WyswietlPomoc.h" />
+    <ClInclude Include="WyswietlTrase.h" />
+    <ClInclude Include="WyswietlTrasy.h" />
     <ClInclude Include="ZnajdzMiasto.h" />
   </ItemGroup>
   <ItemGroup>
@@ -174,6 +176,8 @@
     <ClCompile Include="WczytajDane.cpp" />
     <ClCompile Include="WczytajPrzelaczniki.cpp" />
     <ClCompile Include="WyswietlPomoc.cpp" />
+    <ClCompile Include="WyswietlTrase.cpp" />
+    <ClCompile Include="WyswietlTrasy.cpp" />
     <ClCompile Include="ZnajdzMiasto.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

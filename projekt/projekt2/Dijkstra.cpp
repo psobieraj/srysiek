@@ -1,4 +1,5 @@
 #include <string>
+#include <queue>
 #include "Dijkstra.h"
 #include "Struktury.h"
 #include "InicjujTablice.h"

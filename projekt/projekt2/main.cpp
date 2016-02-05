@@ -5,6 +5,7 @@
 #include "WczytajDane.h"
 #include "WyswietlPomoc.h"
 #include "Dijkstra.h"
+#include "WyswietlTrasy.h"
 using namespace std;
 
 int main(int argc, char* argv[]) {
@@ -19,7 +20,7 @@ int main(int argc, char* argv[]) {
 	if (WczytajPrzelaczniki(argc, argv, NazwaDrogi, NazwaTrasy, NazwaStart)) {
 		if (WczytajDane(NazwaDrogi, Drzewo, Lista, LiczbaMiast)) {
 			Dijkstra(NazwaStart, Drzewo, Lista, Odleglosci, Poprzednicy, LiczbaMiast);
-			return 0;
+			WyswietlTrasy(NazwaTrasy, Lista, Odleglosci, Poprzednicy, LiczbaMiast);
 		} else {
 			cout << "Nie udalo sie otworzyc pliku wejsciowego.";
 		}
