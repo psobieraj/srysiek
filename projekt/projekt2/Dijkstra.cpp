@@ -12,4 +12,5 @@ void Dijkstra(string &NazwaStart, Wezel* &Drzewo, Graf Lista[], int Odleglosci[]
 	InicjujTablice(NazwaStart, Drzewo, Odleglosci, Poprzednicy, LiczbaMiast);
 	UtworzKolejke(NazwaStart, Kolejka, Drzewo, Odleglosci, LiczbaMiast);
 	PoliczOdleglosci(Kolejka, Lista, Odleglosci, Poprzednicy, LiczbaMiast);
+	delete[] Kolejka;
 }
