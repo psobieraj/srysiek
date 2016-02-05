@@ -6,6 +6,7 @@
 #include "WyswietlPomoc.h"
 #include "Dijkstra.h"
 #include "WyswietlTrasy.h"
+#include "ZwolnijPamiec.h"
 using namespace std;
 
 int main(int argc, char* argv[]) {
@@ -27,6 +28,8 @@ int main(int argc, char* argv[]) {
 	} else {
 		WyswietlPomoc();
 	}
+
+	ZwolnijPamiec(Drzewo, Lista, Odleglosci, Poprzednicy, LiczbaMiast);
 
 	return 0;
 }

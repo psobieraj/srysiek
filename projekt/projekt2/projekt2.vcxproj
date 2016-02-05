@@ -161,6 +161,9 @@
     <ClInclude Include="WyswietlTrase.h" />
     <ClInclude Include="WyswietlTrasy.h" />
     <ClInclude Include="ZnajdzMiasto.h" />
+    <ClInclude Include="ZwolnijPamiec.h" />
+    <ClInclude Include="ZwolnijPamiecDrzewo.h" />
+    <ClInclude Include="ZwolnijPamiecSasiad.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Dijkstra.cpp" />
@@ -179,6 +182,9 @@
     <ClCompile Include="WyswietlTrase.cpp" />
     <ClCompile Include="WyswietlTrasy.cpp" />
     <ClCompile Include="ZnajdzMiasto.cpp" />
+    <ClCompile Include="ZwolnijPamiec.cpp" />
+    <ClCompile Include="ZwolnijPamiecDrzewo.cpp" />
+    <ClCompile Include="ZwolnijPamiecSasiad.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
